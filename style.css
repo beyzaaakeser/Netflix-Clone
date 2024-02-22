@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --red-color: #e50914;
+  --white-color: #fff;
+  --black-color: #191919;
+  --border-color: #626262;
+  --bg-color: #232323;
+  --footer-color: #B3B3B3;
+}
+
+.btn {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  padding: 9px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(47, 47, 47, 0.5) 50%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(images/TR-tr-20240219-popsignuptwoweeks-perspective_alpha_website_small.jpg)
+      no-repeat center;
+  background-position: center center;
+  background-size: 115% auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 75vh;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: none;
+}
+
+.nav-logo img {
+  width: 150px;
+}
+
+.nav-login select {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 7px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+}
+
+.main {
+  position: absolute;
+  top: 50%; /* Start at 50% height */
+  left: 50%; /* Start at 50% width */
+  transform: translate(-50%, -80%);
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+}
+
+.main-text h1 {
+  font-size: 45px;
+}
+
+.main-text > p:nth-child(2) {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.main-text > p:nth-child(3) {
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-button input {
+  background-color: transparent;
+  border: 1px solid rgba(245, 245, 245, 0.534);
+  color: var(--border-color);
+  padding: 15px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.main-button input::-webkit-input-placeholder {
+  color: white;
+}
+
+.main-button .main-btn {
+  width: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.device {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 60vh;
+  background-color: black;
+  border-top: 10px solid var(--bg-color);
+  border-bottom: 10px solid var(--bg-color);
+}
+
+.device-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.device-text h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.devices {
+  position: relative;
+}
+
+.devices .device-video {
+  height: auto;
+  width: 450px;
+  position: absolute;
+  transform: translate(20%, 40%);
+}
+
+.devices .device-tv {
+  position: relative;
+  z-index: 10;
+}
+
+.offline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+  height: 60vh;
+  background-color: black;
+  border-bottom: 10px solid var(--bg-color);
+}
+
+.offline-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.offline-text h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.offline-text p {
+  font-size: 25px;
+}
+
+.offlines {
+  position: relative;
+  margin-left: -50px;
+}
+
+.offline-img {
+  position: relative;
+  z-index: 10;
+}
+
+
+.everywhere {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 60vh;
+  background-color: black;
+  border-bottom: 10px solid var(--bg-color);
+}
+
+.everywhere-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.everywhere-text h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.everywhere-devices {
+  position: relative;
+}
+
+.everywhere-device-video {
+  height: auto;
+  width: 350px;
+  position: absolute;
+  transform: translate(40%, 30%);
+}
+
+.everywhere-device-tablet {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  height: 60vh;
+  background-color: black;
+  border-bottom: 10px solid var(--bg-color);
+}
+
+.child-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.child-text h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.chil-text p {
+  font-size: 25px;
+}
+
+.children {
+  position: relative;
+  margin-left: -50px;
+}
+
+
+.faq{
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+  color: var(--white-color);
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid var(--bg-color);
+}
+
+.faq h2{
+  margin: 50px 0 10px 0;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.row .first{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  background-color: var(--bg-color);
+  padding: 25px ;
+  cursor: pointer;
+}
+
+.first h3{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.faq > h3{
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.faq > .main-button{
+  margin-top: 25px;
+}
+
+footer{
+  background-color: black;
+  height: 40vh;
+  cursor: pointer;
+}
+
+
+.footer-container {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+
+}
+footer .questions {
+  padding: 50px 0 10px 0;
+  font-size: 18px;
+  color: var(--footer-color);
+}
+footer .questions span{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.footer .footer-item {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  color: var(--footer-color);
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.footer-select {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer-end {
+  padding: 20px 0 10px 0;
+  font-size: 15px;
+  color: var(--footer-color);
+}
